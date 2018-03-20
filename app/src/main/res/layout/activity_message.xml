@@ -26,7 +26,7 @@
             android:ems="10"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="410dp"
-            android:hint="message text"
+            android:hint="@string/message_text"
             />
 
         <Button

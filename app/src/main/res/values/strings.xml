@@ -11,6 +11,12 @@
     <string name="logout_button">LOGOUT</string>
     <string name="send_button">SEND</string>
     <string name="my_friend">my friend</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="email_adress">email adress</string>
+    <string name="message_text">message text</string>
 
 
 </resources>
