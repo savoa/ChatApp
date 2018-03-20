@@ -48,7 +48,7 @@
             android:layout_width="101dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
-            android:text="LOGIN"
+            android:text="@string/login_button"
             />
 
         <Button
@@ -56,7 +56,7 @@
             android:layout_width="101dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:text="REGISTER" />
+            android:text="@string/register_button" />
 
     </LinearLayout>
 

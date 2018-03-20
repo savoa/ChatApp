@@ -100,7 +100,6 @@
         android:id="@+id/date_picker"
         android:layout_width="match_parent"
         android:layout_height="231dp"
-
         android:datePickerMode="spinner"
         android:spinnersShown="false">
 
@@ -111,7 +110,7 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:text="REGISTER" />
+        android:text="@string/register_button" />
 
 
 

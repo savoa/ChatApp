@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">ChatApplication</string>
+
     <string-array name="spinner">
         <item>male</item>
         <item>female</item>
-        <item>gay</item>
-        <item>lesbian</item>
     </string-array>
+
+    <string name="login_button">LOGIN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="logout_button">LOGOUT</string>
+    <string name="send_button">SEND</string>
+    <string name="my_friend">my friend</string>
+
+
 </resources>
