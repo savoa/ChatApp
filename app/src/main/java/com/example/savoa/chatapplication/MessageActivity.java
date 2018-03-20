@@ -41,6 +41,7 @@ public class MessageActivity extends AppCompatActivity implements View.OnClickLi
         else if(view.getId() == R.id.send){
 
             Toast.makeText(getApplicationContext(), "Message is sent", Toast.LENGTH_SHORT).show();
+            message.setText("");
 
         }
     }

@@ -25,14 +25,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="410dp"
             android:hint="message text"
             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="445dp"
+            android:layout_marginTop="405dp"
             android:layout_marginLeft="20dp"
             android:text="SEND"
             android:id="@+id/send"/>
