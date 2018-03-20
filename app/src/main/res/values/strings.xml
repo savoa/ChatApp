@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChatApplication</string>
+    <string-array name="spinner">
+        <item>male</item>
+        <item>female</item>
+        <item>gay</item>
+        <item>lesbian</item>
+    </string-array>
+</resources>

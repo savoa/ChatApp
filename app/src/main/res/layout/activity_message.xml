@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.savoa.chatapplication.MessageActivity">
+
+    <Button
+        android:id="@+id/logout_from_chat"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="LOG OUT" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="450dp"
+            android:hint="message text"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="445dp"
+            android:layout_marginLeft="20dp"
+            android:text="SEND"
+            android:id="@+id/send"/>
+
+    </LinearLayout>
+
+</LinearLayout>
