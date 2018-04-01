@@ -99,9 +99,10 @@
     <DatePicker
         android:id="@+id/date_picker"
         android:layout_width="match_parent"
-        android:layout_height="231dp"
+        android:layout_height="235dp"
+        android:calendarViewShown="false"
         android:datePickerMode="spinner"
-        android:spinnersShown="false">
+        android:spinnersShown="true">
 
     </DatePicker>
 

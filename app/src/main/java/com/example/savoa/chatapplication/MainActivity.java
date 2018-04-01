@@ -8,6 +8,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener, TextWatcher {
 
@@ -18,8 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        login_button = findViewById(R.id.login);
-        register_button = findViewById(R.id.register);
+        login_button = (Button) findViewById(R.id.login);
+        register_button = (Button) findViewById(R.id.register);
 
         register_button.setOnClickListener(this);
         login_button.setOnClickListener(this);

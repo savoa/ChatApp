@@ -17,6 +17,24 @@
     <string name="firstname">First Name</string>
     <string name="email_adress">email adress</string>
     <string name="message_text">message text</string>
+    <string name="my_chat_list">My chat list</string>
+    <string name="first_letter">N</string>
+    <string name="contact_name">Petar Petrovic</string>
+    <string name="savo_dragovic">Savo Dragovic</string>
+    <string name="srdjan_usorac">Srdjan Usorac</string>
+    <string name="marko_markovic">Marko Markovic</string>
+    <string name="igor_ilic">Igor Ilic</string>
+    <string name="nikola_percevic">Nikola Percevic</string>
+    <string name="vladimir_spasojevic">Vladimir Spasojevic</string>
+    <string name="petar_petrovic">Petar Petrovic</string>
+    <string name="van_persi">Robin van Persi</string>
+    <string name="diego_forlan">Diego Forlan</string>
+    <string name="arien_roben">Arien Roben</string>
+    <string name="oleg_blohin">Oleg Blohin</string>
+    <string name="ola_solskjer">Ola Guner Solskjer</string>
+    <string name="dejan_savicevic">Dejan Savicevic</string>
+
+
 
 
 </resources>
