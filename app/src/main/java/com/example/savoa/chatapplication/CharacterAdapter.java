@@ -3,6 +3,7 @@ package com.example.savoa.chatapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
  * Created by MITAR on 30-Mar-18.
  */
 
-public class CharacterAdapter extends BaseAdapter implements View.OnClickListener {
+public class CharacterAdapter extends BaseAdapter {
 
     private Context mContext;
     private ArrayList<Custom> mCharacters;
-    TextView message;
+   // TextView message;
 
     public CharacterAdapter(Context mContext) {
         this.mContext = mContext;
@@ -61,6 +62,23 @@ public class CharacterAdapter extends BaseAdapter implements View.OnClickListene
             LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(
                     Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.character_row, null);
+
+            final ImageView next_button = (ImageView) view.findViewById(R.id.show_chat);
+            final View bundle_convert_view = view;
+            next_button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Bundle bundle = new Bundle();
+                    TextView text = bundle_convert_view.findViewById(R.id.contact_name);
+                    String name = text.getText().toString();
+                    bundle.putString("contact_name", name);
+
+                    Intent intent = new Intent(mContext,MessageActivity.class);
+                    intent.putExtras(bundle);
+                    mContext.startActivity(intent);
+                }
+            });
+
             ViewHolder holder = new ViewHolder();
             holder.image = (ImageView) view.findViewById(R.id.show_chat);
             holder.name = (TextView) view.findViewById(R.id.contact_name);
@@ -84,21 +102,6 @@ public class CharacterAdapter extends BaseAdapter implements View.OnClickListene
         return view;
     }
 
-    @Override
-    public void onClick(View v) {
-
-        Intent intent;
-
-        if(v.getId() == R.id.show_chat){
-            intent = new Intent(mContext, MessageActivity.class);
-            intent.setAction(Intent.ACTION_SEND);
-            intent.putExtra(Intent.EXTRA_TEXT, message.getText());
-            mContext.startActivity(intent);
-
-
-        }
-
-    }
 
     private class ViewHolder {
         public TextView first_letter = null;

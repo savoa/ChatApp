@@ -83,11 +83,6 @@ public class ContactsActivity extends AppCompatActivity implements View.OnClickL
         if (view.getId() == R.id.logout) {
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
-        }else if(view.getId() == R.id.show_chat){
-
-            intent = new Intent(this, MessageActivity.class );
-            startActivity(intent);
-
         }
     }
 }
